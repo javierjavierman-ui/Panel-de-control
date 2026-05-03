@@ -2,8 +2,8 @@
 // CONFIGURACIÓN DE SUPABASE
 // ==========================================
 // Sustituye estos valores con los de tu proyecto en Supabase
-const SUPABASE_URL = '[TU_URL]';
-const SUPABASE_ANON_KEY = '[TU_KEY]';
+const SUPABASE_URL = '__SUPABASE_URL__';
+const SUPABASE_ANON_KEY = '__SUPABASE_ANON_KEY__';
 
 // Inicializamos el cliente de Supabase
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -243,7 +243,7 @@ async function enviarCorreoBrevo(titulo, mensaje, destinatarios, esPrueba) {
         method: 'POST',
         headers: {
             'accept': 'application/json',
-            'api-key': 'TU_API_KEY_AQUI', // Sustituir por tu clave real o usar variables de entorno
+            'api-key': '__BREVO_API_KEY__', // Sustituir por tu clave real o usar variables de entorno
             'content-type': 'application/json'
         },
         body: JSON.stringify(bodyData)

@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { createClient } = require('@supabase/supabase-js');
 
-const SUPABASE_URL = 'https://uvsvyelbhjhenufndbcw.supabase.co';
-const SUPABASE_SERVICE_KEY = 'TU_SUPABASE_SERVICE_KEY_AQUI';
+const SUPABASE_URL = '__SUPABASE_URL__';
+const SUPABASE_SERVICE_KEY = '__SUPABASE_SERVICE_KEY__';
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
 
 async function importarDesdeCSV() {
